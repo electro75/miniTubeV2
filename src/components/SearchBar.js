@@ -1,9 +1,19 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
+
+    state ={ term : 'Sahil'}
+
     render() {
         return (
-            <div>Search Bar</div>
+            <div className="ui segment search-bar">
+                <form className="ui form">
+                    <div className="field">
+                        <label>Video Search</label>
+                        <input value={this.state.term} type="text"/>
+                    </div>
+                </form>
+            </div>
         )
     }
 }
